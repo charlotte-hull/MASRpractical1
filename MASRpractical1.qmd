@@ -1,0 +1,72 @@
+---
+title: "Week 2"
+format: html
+editor: visual
+execute: 
+  echo: false
+  engine: knitr
+---
+
+## MAS1608 R Practical 1
+
+### Aims
+
+The main aim of our work this week is to give you some basic experience using R. In addition we want to look at two main areas: working with vectors and with data frames. It's much easier to learn R by doing rather than by watching lectures, so the idea is that you try out all the exercises on this sheet, either during the practical class, or in your own time afterwards.
+
+There's nothing to hand in from the R practicals in weeks 4 and 8. Instead, Assignment B2 will be based on R. The hand-in date for the assessed R work is after the Easter vacation, so you have plenty of time to get some practice first.
+
+Work through the exercises below and ask for help from the demonstrators whenever you like. Some points to note:-
+
+-   Please read through all of this handout very carefully, and follow the instructions, taking care to input the commands exactly as they appear here.
+
+-   Remember that R is case-sensitive, so upper/lower case letters matter.
+
+-   If you get error messages don't worry. That's just part of using R. Try to figure out what went wrong, and try again. If you're stuck then ask a demonstrator for help.
+
+-   If you copy and paste commands directly from this file, make sure you delete the leading \> symbol on each line in your text editor.
+
+-   Feel free to skip over questions which you think are easy. You might prefer to leave question 4 until after this material has been covered in lectures.
+
+### Getting started
+
+Start off by opening Rstudio. You should see four panels; if there is no text editor (usually the top-left panel), click on the green button with a white plus symbol and open a new R script. Remember -- to execute a line of code in the text editor, hit Ctrl - Enter. It is good practice to always use the text editor, rather than type into the console window (bottom- left panel) directly. This is especially true in future practicals when you will be building large functions; it is much easier to de-bug and edit code in the text editor than in the console window.
+
+Hint: To commit several lines of code in one go, highlight your block of code in the texteditor and hit Ctrl - Enter just once! Now you've got Rstudio open, you're ready to go!
+
+### Simple calculations
+
+**Question 1:** Use R to find the following
+
+A)  232 x 4096
+
+```{python}
+232*4096
+```
+
+B)  The sum of 731, 519, 345, and 3512
+
+```{python}
+731+519+345+3512
+```
+
+C)  $\log(20)$
+
+```{python}
+import numpy as np
+np.log(20)
+```
+
+D)  $e^5$ (Use the exp function)
+
+```{python}
+import numpy as np
+np.exp(5)
+```
+
+E)  8! (Use the factorial function)
+
+```{python}
+import numpy as np
+x=np.arange(1,9)
+np.prod(x)
+```
